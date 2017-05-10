@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d2f6282db758841e38c44df1246c7a08
+timeCreated: 1494352229
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fireye GF 3 Headline
+  fontNames:
+  - Fireye GF 3 Headline
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
