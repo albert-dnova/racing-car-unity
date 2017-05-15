@@ -17,9 +17,12 @@ public class CarController : MonoBehaviour {
 
 	private Rigidbody2D _rigidBody;
 
+	private FrontAxle _frontAxle;
+	
 	// Use this for initialization
 	void Start () {
 		_rigidBody = GetComponent<Rigidbody2D>();
+		_frontAxle = GetComponentInChildren<FrontAxle>();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +39,19 @@ public class CarController : MonoBehaviour {
 		{
 			_braking = true;
 		}
+
+		if(Input.GetKey(KeyCode.A))
+		{
+			_frontAxle.StartRotationLeft();
+		}
+		else if(Input.GetKey(KeyCode.D))
+		{
+			_frontAxle.StartRotationRight();
+		}
+        else
+        {
+            _frontAxle.ResetRotation();    
+        }
 	}
 
 	void FixedUpdate() 
